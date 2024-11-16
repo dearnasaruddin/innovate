@@ -1,0 +1,29 @@
+nav {
+    background: #483F9C;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+
+    ul {
+        column-gap: 26.5px;
+        li {
+            .nav-link {
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                color: $text_white;
+
+                &:hover {
+                    color: $secondary_color;
+                }
+
+            }
+        }
+    }
+
+    .nav_btn {
+        @include Button;
+    }
+}

@@ -1,0 +1,112 @@
+#people_thinks {
+    padding: 100px 0;
+    background: #F8F8FF;
+    text-align: center;
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        color: $text_black;
+        margin-bottom: 152px;
+    }
+
+    .people_card {
+        padding: 120px 182px 56px 194px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: -15px 30px 50px 0 rgba(171, 175, 199, 0.32);
+        background: #fff;
+        position: relative;
+
+        a {
+            height: 64px;
+            width: 64px;
+            background: #1BBF00;
+            opacity: 0.2;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 21px;
+            color: $text_white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            z-index: 5;
+            transition: all linear 0.3s;
+            -webkit-transition: all linear 0.3s;
+            -moz-transition: all linear 0.3s;
+            -ms-transition: all linear 0.3s;
+            -o-transition: all linear 0.3s;
+
+            &:hover{
+               opacity: 1;
+            }
+        }
+        .arrow_left{
+            left: -160px;
+        }
+        .arrow_right{
+            right: -160px;
+        }
+
+
+        img {
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translatex(-55%);
+            -webkit-transform: translatex(-55%);
+            -moz-transform: translatex(-55%);
+            -ms-transform: translatex(-55%);
+            -o-transform: translatex(-55%);
+            -moz-transform: translatex(-50%);
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+            column-gap: 7px;
+            color: #FF7628;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 40px;
+            margin: 33px 0 48px;
+            color: #726E9E;
+        }
+
+        h4 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 40px;
+            color: $text_black;
+            margin-bottom: 4px;
+        }
+
+        h6 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #726E9E;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+#banner {
+    background: url(../assets/bg.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    .sone {
+        position: absolute;
+        top: 318px;
+        left: 32px;
+        z-index: 1;
+    }
+
+    .stwo {
+        position: absolute;
+        bottom: 60px;
+        right: 310px;
+        z-index: 1;
+    }
+
+    .ban_text {
+        padding: 260px 0 240px;
+
+        h1 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            font-size: 84px;
+            line-height: 100px;
+            color: $text_white;
+        }
+
+        P {
+            max-width: 718px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            color: $text_white;
+            margin: 20px auto 0;
+        }
+
+        .ban_btn {
+            margin-top: 56px;
+
+            a {
+                border: 1px solid $secondary_color;
+                transition: all linear 0.3s;
+                -webkit-transition: all linear 0.3s;
+                -moz-transition: all linear 0.3s;
+                -ms-transition: all linear 0.3s;
+                -o-transition: all linear 0.3s;
+
+            }
+
+            .ban_btn_one {
+                @include Button;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+
+
+            .ban_btn_two {
+                @include Button($bg: false);
+                margin-left: 28px;
+
+                &:hover{
+                    background: $secondary_color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.container {
+    max-width: 1170px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol{
+    list-style: none;
+    padding-left: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// ================================ variables Start ================================
+$base_color: #160c6d;
+$primary_color: #6B62C5;
+$text_black: #141135;
+$text_white: #EFF4FA;
+$secondary_color: #1BBF00;
+
+// ================================ variables End ================================
+
+// ================================ Mixin Start ================================
+@mixin Button($bg: true) {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: $text_white;
+    padding: 14px 28px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    text-decoration: none;
+
+    @if $bg {
+        background: $secondary_color;
+
+    }
+}
+
+@mixin ReadMore() {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: $text_black;
+    padding: 8px 10px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+
+    &::after{
+        content: "";
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $secondary_color;
+        opacity: 0.3;
+        z-index: -1;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+    }
+}
+
+// ================================ Mixin End ================================

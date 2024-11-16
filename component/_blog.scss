@@ -1,0 +1,84 @@
+#blog {
+
+    padding: 100px 0;
+    background: #F9F9FB;
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: -2px;
+        color: $text_black;
+        margin-bottom: 64px;
+    }
+
+    .blog_item_main {
+
+        .blog_item {
+            .blog_img {
+                height: 220px;
+                background: #C4C4C4;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+
+            }
+
+            .blog_text {
+                margin-left: 56px;
+
+                .blog_info {
+                    font-family: "Quicksand", sans-serif;
+                    font-size: 16px;
+
+                    .blog_cat {
+                        font-weight: 700;
+                        line-height: 22px;
+                        color: $secondary_color;
+                    }
+
+                    .blog_writer {
+                        font-weight: 500;
+                        line-height: 25px;
+                        color: #726E9E;
+                        margin: 0 24px 0 36px;
+                    }
+
+                    .publish_time {
+                        font-weight: 500;
+                        line-height: 25px;
+                        color: #726E9E;
+                    }
+                }
+
+                .heading {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 55px;
+                    letter-spacing: -1.5px;
+                    color: $text_black;
+                    margin: 16px 0;
+                    // white-space: nowrap;
+                }
+
+                .blog_read_more {
+                    @include ReadMore;
+
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .blog_item_gap{
+            margin: 60px 0;
+        }
+    }
+
+}

@@ -1,0 +1,100 @@
+#whatdo {
+    padding: 100px 0;
+    background-color: #F6F5FF;
+
+    .row{
+        row-gap: 30px;
+        .whatdo_heading {
+            h2 {
+                font-family: "Open Sans", sans-serif;
+                font-size: 48px;
+                font-weight: 700;
+                color: $text_black;
+            }
+    
+            p {
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                line-height: 32px;
+                letter-spacing: 0.5px;
+                font-weight: 400;
+                color: #6C7D93;
+                margin: 20px 0 56px;
+            }
+    
+            a {
+                @include Button;
+            }
+        }
+    
+        .whatdo_card {
+            text-align: center;
+            background: #fff;
+            padding: 48px 0;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            transition: all linear 0.3s;
+            -webkit-transition: all linear 0.3s;
+            -moz-transition: all linear 0.3s;
+            -ms-transition: all linear 0.3s;
+            -o-transition: all linear 0.3s;
+    
+            h3 {
+                font-family: "Open Sans", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                margin: 32px 0 16px;
+                color: $text_black;
+                transition: all linear 0.3s;
+                -webkit-transition: all linear 0.3s;
+                -moz-transition: all linear 0.3s;
+                -ms-transition: all linear 0.3s;
+                -o-transition: all linear 0.3s;
+    
+            }
+    
+            p {
+                max-width: 293px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: #726E9E;
+                margin: 0 auto 20px;
+                transition: all linear 0.3s;
+                -webkit-transition: all linear 0.3s;
+                -moz-transition: all linear 0.3s;
+                -ms-transition: all linear 0.3s;
+                -o-transition: all linear 0.3s;
+    
+            }
+    
+            a {
+                @include ReadMore;
+            }
+    
+            &:hover {
+                background: $primary_color;
+    
+                h3,
+                p {
+                    color: $text_white;
+                }
+    
+                a {
+                    
+                    color: $text_white;
+                    &::after {
+                        background: $text_white;
+                        
+                    }
+    
+                }
+            }
+        }
+    }
+}

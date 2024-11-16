@@ -1,0 +1,115 @@
+#impact {
+    padding-top: 100px;
+    position: relative;
+
+    .impact_heading {
+        text-align: center;
+
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            color: $text_black;
+        }
+
+        p {
+            max-width: 558px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #726E9E;
+            margin: 23px auto 75px;
+        }
+    }
+
+    .impact_content {
+        display: flex;
+        column-gap: 32px;
+
+        &:last-child {
+            margin-top: 40px;
+        }
+
+        .impact_text {
+            h3 {
+                white-space: nowrap;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                color: $text_black;
+                margin-bottom: 20px;
+            }
+
+            p {
+                max-width: 338px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: #726E9E;
+            }
+        }
+    }
+
+    .impact_img {
+        width: 228px;
+        height: 274px;
+        background: #C4C4C4;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 21.5px 0 230px 84px;
+        position: relative;
+        box-shadow: 0 20px 60px 0 rgba(162, 169, 192, 0.25);
+
+        .impect_img_two{
+            width: 161.5px;
+            height: 141px;
+            background: #C4C4C4;
+            position: absolute;
+            top: -21.5px;
+            right: -186.5px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            box-shadow: 0 10px 60px 0 rgba(162, 169, 192, 0.25);
+
+            .impact_shape{
+                position: absolute;
+                top: 66px;
+                left: 127.5px;
+                z-index: 2;
+            }
+        }
+        .impect_img_three{
+            width: 310px;
+            height: 264px;
+            background: #C4C4C4;
+            position: absolute;
+            top: 140px;
+            left: 181px;
+            border: 6px solid #fff;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            z-index: 1;
+            box-shadow: 0 30px 60px 0 rgba(162, 169, 192, 0.25);
+        }
+        
+    }
+
+    .impact_bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
