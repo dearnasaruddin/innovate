@@ -563,6 +563,9 @@ nav .nav_btn {
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
+#plan .plan_card img {
+  width: 100%;
+}
 #plan .plan_card h4 {
   max-width: 110px;
   font-family: "Open Sans", sans-serif;
@@ -884,4 +887,178 @@ footer .copyright_sec .terms {
 }
 footer .copyright_sec .terms:hover {
   color: #1BBF00;
+}
+
+@media (max-width: 575px) {
+  #banner .sone {
+    width: 50px;
+    top: 265px;
+    left: 12px;
+  }
+  #banner .stwo {
+    height: 40px;
+    bottom: 30px;
+    right: 15px;
+  }
+  #banner .ban_text {
+    padding: 100px 0 80px;
+  }
+  #banner .ban_text h1 {
+    font-size: 45px;
+    line-height: 56px;
+  }
+  #banner .ban_text p {
+    width: auto;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  #banner .ban_text .ban_btn {
+    margin-top: 20px;
+  }
+  #banner .ban_text .ban_btn .ban_btn_one {
+    padding: 10px 20px;
+  }
+  #banner .ban_text .ban_btn .ban_btn_two {
+    padding: 10px 20px;
+    margin-left: 6px;
+  }
+  #project {
+    padding: 50px 0;
+  }
+  #project .projectbg {
+    width: 30%;
+  }
+  #project .project_item h2 {
+    font-size: 48px;
+    margin-bottom: 0px;
+  }
+  #project .project_item h3 {
+    font-size: 20px;
+  }
+  #choose {
+    padding: 50px 0;
+  }
+  #choose .choose_bg {
+    display: none;
+  }
+  #choose .choose_right {
+    margin-left: 0;
+  }
+  #choose .choose_right h2 {
+    font-size: 45px;
+  }
+  #choose .choose_right p {
+    margin: 24px 0 28px;
+  }
+  #choose .choose_right a {
+    margin-bottom: 40px;
+  }
+  #whatdo {
+    padding: 50px 0;
+  }
+  #whatdo .row {
+    row-gap: 48px;
+  }
+  #whatdo .row .whatdo_heading h2 {
+    font-size: 45px;
+  }
+  #whatdo .row .whatdo_heading p {
+    margin: 20px 0 28px !important;
+  }
+  #impact {
+    padding: 50px 0;
+  }
+  #impact .impact_bg {
+    width: 25%;
+  }
+  #impact .impact_heading h2 {
+    font-size: 45px;
+  }
+  #impact .row .impact_content {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  #impact .row .impact_content .impact_icon img {
+    height: 25%;
+  }
+  #impact .row .impact_content .impact_text h3 {
+    font-size: 24px;
+  }
+  #impact .row .impact_img {
+    display: none;
+  }
+  #plan {
+    padding: 50px 0;
+  }
+  #plan h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  #people_thinks {
+    padding: 50px 0;
+  }
+  #people_thinks h2 {
+    font-size: 45px;
+    margin-bottom: 120px;
+  }
+  #people_thinks .people_card {
+    padding: 68px 10px 50px;
+  }
+  #people_thinks .people_card a {
+    display: none;
+  }
+  #people_thinks .people_card img {
+    width: 50%;
+    top: -15%;
+  }
+  #people_thinks .people_card p {
+    font-size: 22px;
+    line-height: 34px;
+    margin: 14px 0 32px;
+  }
+  #blog {
+    padding: 50px 0;
+  }
+  #blog h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  #blog .blog_item_main .blog_item .blog_text {
+    margin-left: 5px;
+  }
+  #blog .blog_item_main .blog_item .blog_text .heading {
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0;
+  }
+  #blog .blog_item_main .blog_item .blog_text .blog_info .blog_writer {
+    margin: 0px 16px 0 16px;
+  }
+  footer {
+    padding: 50px 10px;
+  }
+  footer .footer_link_heading {
+    margin: 30px 0;
+  }
+  footer .footer_main .footer_link_one {
+    margin-left: 0;
+  }
+  footer .footer_main .footer_link_two {
+    margin-left: 0;
+  }
+  footer .footer_main .footer_link_three {
+    margin-left: 0;
+  }
+  footer .footer_main ul li {
+    margin-bottom: 16px;
+  }
+  footer .copyright_sec {
+    margin-top: 24px;
+  }
+  footer .copyright_sec .row {
+    text-align: center;
+  }
+  footer .copyright_sec .row .privacy {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
